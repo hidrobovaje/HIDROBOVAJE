@@ -7,7 +7,7 @@
     <meta name="description" content="HidroBovaje - Cultivo hidropónico de lechugas premium. Productos 100% orgánicos, libres de pesticidas y cultivados con tecnología sostenible.">
     <meta name="keywords" content="lechugas hidropónicas, cultivo sin suelo, agricultura sostenible, hidroponía, verduras frescas">
     
-    <!-- Verificación Google Search Console (reemplaza con tu código) -->
+    <!-- Verificación Google Search Console -->
     <meta name="google-site-verification" content="google8bce9ab02ec8e1a6.html">
     
     <!-- Favicon -->
@@ -107,8 +107,16 @@
             margin-bottom: 3rem;
         }
         
-        h2 {
+        h1, h2, h3 {
             color: var(--primary);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
             font-size: 2rem;
             margin-bottom: 1.5rem;
             position: relative;
@@ -130,6 +138,15 @@
             line-height: 1.7;
         }
         
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
         .btn {
             display: inline-block;
             background-color: var(--primary);
@@ -148,6 +165,51 @@
             background-color: var(--secondary);
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .product-card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .contact-form {
+            margin-top: 2rem;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        textarea {
+            min-height: 120px;
         }
         
         footer {
@@ -188,6 +250,14 @@
                 padding: 0.5rem;
                 font-size: 0.9rem;
             }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
         }
     </style>
 </head>
@@ -223,7 +293,7 @@
         <section id="nosotros">
             <h2>Sobre Nosotros</h2>
             <p>HidroBovaje es una empresa innovadora dedicada al cultivo de lechugas mediante técnicas hidropónicas avanzadas. Nuestro sistema permite:</p>
-            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+            <ul>
                 <li>Mayor eficiencia en el uso del agua (90% menos que la agricultura tradicional)</li>
                 <li>Cultivos libres de pesticidas y químicos dañinos</li>
                 <li>Producción durante todo el año, independiente de las estaciones</li>
@@ -237,23 +307,23 @@
             <h2>Nuestros Productos</h2>
             <p>Ofrecemos diversas variedades de lechugas hidropónicas, cada una con características únicas:</p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                <div style="background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Lechuga Romana</h3>
-                    <p style="margin-bottom: 1rem;">Crujiente y dulce, ideal para ensaladas. Rica en vitaminas A y K.</p>
-                    <a href="#contacto" class="btn" style="display: inline-block;">Más información</a>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>Lechuga Romana</h3>
+                    <p>Crujiente y dulce, ideal para ensaladas. Rica en vitaminas A y K.</p>
+                    <a href="#contacto" class="btn">Más información</a>
                 </div>
                 
-                <div style="background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Lechuga Butterhead</h3>
-                    <p style="margin-bottom: 1rem;">Hojas suaves y mantecosas con un sabor delicado. Perfecta para ensaladas gourmet.</p>
-                    <a href="#contacto" class="btn" style="display: inline-block;">Más información</a>
+                <div class="product-card">
+                    <h3>Lechuga Butterhead</h3>
+                    <p>Hojas suaves y mantecosas con un sabor delicado. Perfecta para ensaladas gourmet.</p>
+                    <a href="#contacto" class="btn">Más información</a>
                 </div>
                 
-                <div style="background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Lechuga Oak Leaf</h3>
-                    <p style="margin-bottom: 1rem;">Hojas rizadas con sabor a nuez. Alta en antioxidantes y minerales.</p>
-                    <a href="#contacto" class="btn" style="display: inline-block;">Más información</a>
+                <div class="product-card">
+                    <h3>Lechuga Oak Leaf</h3>
+                    <p>Hojas rizadas con sabor a nuez. Alta en antioxidantes y minerales.</p>
+                    <a href="#contacto" class="btn">Más información</a>
                 </div>
             </div>
         </section>
@@ -263,21 +333,21 @@
             <h2>Contacto</h2>
             <p>¿Interesado en nuestros productos? Contáctanos para más información:</p>
             
-            <div style="margin-top: 2rem; background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 600px;">
+            <div class="contact-form">
                 <form>
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="nombre" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
                     </div>
                     
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email:</label>
-                        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     
-                    <div style="margin-bottom: 1.5rem;">
-                        <label for="mensaje" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;"></textarea>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
                     </div>
                     
                     <button type="submit" class="btn">Enviar Mensaje</button>
@@ -292,9 +362,14 @@
             <p>HidroBovaje - Cultivando el futuro con tecnología hidropónica</p>
             <p>Email: info@hidrobovaje.com | Teléfono: +1 234 567 890</p>
             <div class="copyright">
-                &copy; 2023 HidroBovaje. Todos los derechos reservados.
+                &copy; <span id="year"></span> HidroBovaje. Todos los derechos reservados.
             </div>
         </div>
     </footer>
+
+    <!-- Script para año actual -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
