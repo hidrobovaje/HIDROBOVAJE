@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos esenciales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HidroBovaje - Cultivo hidropónico de lechugas premium. Productos 100% orgánicos, libres de pesticidas y cultivados con tecnología sostenible.">
+    <meta name="keywords" content="lechugas hidropónicas, cultivo sin suelo, agricultura sostenible, hidroponía, verduras frescas">
+    
+    <!-- Verificación Google Search Console (reemplaza con tu código) -->
+    <meta name="google-site-verification" content="TU_CODIGO_DE_VERIFICACION">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <title>HidroBovaje | Lechugas Hidropónicas Premium</title>
+    
+    <!-- Estilos CSS -->
+    <style>
+        :root {
+            --primary: #2E8B57; /* Verde principal */
+            --secondary: #3CB371; /* Verde secundario */
+            --light: #F8F9FA; /* Fondo claro */
+            --dark: #1A3A1A; /* Verde oscuro */
+            --text: #333333; /* Texto principal */
+            --white: #FFFFFF; /* Blanco */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .logo-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo-text {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .logo-slogan {
+            font-size: 1.3rem;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: var(--dark);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .nav-link {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 0.8rem 1.8rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .copyright {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .logo-text {
+                font-size: 2.2rem;
+            }
+            
+            .logo-slogan {
+                font-size: 1.1rem;
+            }
+            
+            .nav-container {
+                flex-wrap: wrap;
+            }
+            
+            .nav-link {
+                margin: 0.3rem;
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabecera con logo -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-text">HidroBovaje</div>
+            <div class="logo-slogan">Cultivando el futuro con frescura hidropónica</div>
+        </div>
+    </header>
+    
+    <!-- Navegación -->
+    <nav>
+        <div class="nav-container">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#nosotros" class="nav-link">Nosotros</a>
+            <a href="#productos" class="nav-link">Productos</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
+        </div>
+    </nav>
+    
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Hero -->
+        <section id="inicio">
+            <h1>Bienvenido a HidroBovaje</h1>
+            <p>Descubre la nueva generación de cultivos hidropónicos. Nuestras lechugas son más frescas, más nutritivas y más sostenibles que las cultivadas tradicionalmente.</p>
+            <a href="#productos" class="btn">Ver nuestros productos</a>
+        </section>
+        
+        <!-- Sección Nosotros -->
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>HidroBovaje es una empresa innovadora dedicada al cultivo de lechugas mediante técnicas hidropónicas avanzadas. Nuestro sistema permite:</p>
+            <ul style="margin-left: 2rem; margin-bottom: 1rem;">
+                <li>Mayor eficiencia en el uso del agua (90% menos que la agricultura tradicional)</li>
+                <li>Cultivos libres de pesticidas y químicos dañinos</li>
+                <li>Producción durante todo el año, independiente de las estaciones</li>
+                <li>Mayor valor nutricional en cada cosecha</li>
+            </ul>
+            <p>Nuestra misión es revolucionar la agricultura mediante tecnologías sostenibles que beneficien tanto a los consumidores como al medio ambiente.</p>
+        </section>
+        
+        <!-- Sección Productos -->
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <p>Ofrecemos diversas variedades de lechugas hidropónicas, cada una con características únicas:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <div style="background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Lechuga Romana</h3>
+                    <p style="margin-bottom: 1rem;">Crujiente y dulce, ideal para ensaladas. Rica en vitaminas A y K.</p>
+                    <a href="#contacto" class="btn" style="display: inline-block;">Más información</a>
+                </div>
+                
+                <div style="background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Lechuga Butterhead</h3>
+                    <p style="margin-bottom: 1rem;">Hojas suaves y mantecosas con un sabor delicado. Perfecta para ensaladas gourmet.</p>
+                    <a href="#contacto" class="btn" style="display: inline-block;">Más información</a>
+                </div>
+                
+                <div style="background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Lechuga Oak Leaf</h3>
+                    <p style="margin-bottom: 1rem;">Hojas rizadas con sabor a nuez. Alta en antioxidantes y minerales.</p>
+                    <a href="#contacto" class="btn" style="display: inline-block;">Más información</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Interesado en nuestros productos? Contáctanos para más información:</p>
+            
+            <div style="margin-top: 2rem; background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 600px;">
+                <form>
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="nombre" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="mensaje" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px; font-family: inherit;"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <p>HidroBovaje - Cultivando el futuro con tecnología hidropónica</p>
+            <p>Email: info@hidrobovaje.com | Teléfono: +1 234 567 890</p>
+            <div class="copyright">
+                &copy; 2023 HidroBovaje. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
