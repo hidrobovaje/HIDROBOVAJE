@@ -4,30 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HidroBovaje | Cultivos Hidropónicos de Alta Calidad</title>
-    <meta name="description" content="HidroBovaje ofrece cultivos hidropónicos sostenibles, orgánicos y sin pesticidas. Descubre nuestras lechugas, coliflores y más.">
-    <meta name="keywords" content="hidroponía, cultivos orgánicos, agricultura sostenible, lechuga hidropónica, coliflor, verduras frescas, Perú">
-    <meta name="author" content="HidroBovaje">
+    <!-- Verificación Google Search Console -->
     <meta name="google-site-verification" content="eo2ghe-FTsLcW5AbAjEiiiycCgM7zCkDD7Zy-9biGq4" />
-
     <style>
         :root {
-            --verde-oscuro: #1A3A1A;
-            --verde-medio: #2E8B57;
-            --verde-claro: #3CB371;
-            --blanco: #FFFFFF;
-            --gris-claro: #F5F5F5;
-            --texto: #333333;
-        }
-
-        html {
-            scroll-behavior: smooth;
+            --verde-oscuro: #14532d;
+            --verde-medio: #22c55e;
+            --verde-claro: #a7f3d0;
+            --blanco: #ffffff;
+            --gris-claro: #f1f5f9;
+            --texto: #1e293b;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
@@ -39,51 +32,50 @@
         header {
             background: linear-gradient(135deg, var(--verde-oscuro), var(--verde-medio));
             color: var(--blanco);
-            padding: 2rem 0;
+            padding: 2rem 1rem;
             text-align: center;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
         .logo {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: bold;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
         }
 
         .slogan {
             font-size: 1.2rem;
             font-style: italic;
+            opacity: 0.9;
         }
 
         nav {
             background-color: var(--verde-oscuro);
-            padding: 1rem 0;
+            padding: 0.8rem 1rem;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
         }
 
         .nav-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
         }
 
         .nav-link {
             color: var(--blanco);
             text-decoration: none;
             font-weight: 600;
-            padding: 0.5rem 1.5rem;
+            padding: 0.6rem 1.2rem;
             margin: 0.3rem;
             border-radius: 4px;
-            transition: all 0.3s ease;
+            transition: background 0.3s;
         }
 
         .nav-link:hover {
-            background-color: var(--verde-claro);
+            background-color: var(--verde-medio);
+            color: var(--verde-oscuro);
         }
 
         main {
@@ -96,12 +88,12 @@
             margin-bottom: 3rem;
             background-color: var(--blanco);
             padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
         h1, h2, h3 {
-            color: var(--verde-medio);
+            color: var(--verde-oscuro);
             margin-bottom: 1rem;
         }
 
@@ -113,14 +105,15 @@
         }
 
         .producto-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
-            transition: transform 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            background-color: var(--blanco);
+            transition: transform 0.3s ease;
         }
 
         .producto-card:hover {
-            transform: translateY(-5px);
+            transform: scale(1.03);
         }
 
         .producto-img {
@@ -137,41 +130,40 @@
             display: inline-block;
             background-color: var(--verde-medio);
             color: var(--blanco);
-            padding: 0.8rem 1.8rem;
+            padding: 0.8rem 1.6rem;
             text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
-            transition: all 0.3s;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
             margin-top: 1rem;
         }
 
         .btn:hover {
             background-color: var(--verde-claro);
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 0.8rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-
-        form textarea {
-            resize: vertical;
-            min-height: 120px;
+            color: var(--texto);
         }
 
         footer {
             background-color: var(--verde-oscuro);
             color: var(--blanco);
             text-align: center;
-            padding: 2rem 0;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
         }
 
         .contacto-info {
             margin-top: 1rem;
+        }
+
+        ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.2rem;
+            }
         }
     </style>
 </head>
@@ -187,14 +179,14 @@
             <a href="#productos" class="nav-link">Productos</a>
             <a href="#nosotros" class="nav-link">Nosotros</a>
             <a href="#contacto" class="nav-link">Contacto</a>
-            <a href="#preguntas" class="nav-link">FAQ</a>
+            <a href="#preguntas" class="nav-link">Preguntas Frecuentes</a>
         </div>
     </nav>
 
     <main>
         <section id="inicio">
             <h1>Bienvenido a HidroBovaje</h1>
-            <p>Descubre nuestros cultivos hidropónicos de alta calidad, 100% orgánicos y libres de pesticidas. Productos más frescos, nutritivos y sostenibles.</p>
+            <p>Descubre nuestros cultivos hidropónicos de alta calidad, 100% orgánicos y libres de pesticidas. Productos más frescos, nutritivos y sostenibles para tu hogar o negocio.</p>
             <a href="#productos" class="btn">Ver nuestros productos</a>
         </section>
 
@@ -202,28 +194,28 @@
             <h2>Nuestros Productos</h2>
             <div class="productos-grid">
                 <div class="producto-card">
-                    <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655" alt="Lechuga orgánica" class="producto-img" loading="lazy">
+                    <img src="img/lechuga-organica.jpg" alt="Lechuga Orgánica" class="producto-img">
                     <div class="producto-info">
                         <h3>Lechuga Orgánica</h3>
-                        <p>Cultivada con los más altos estándares de calidad.</p>
+                        <p>Cultivada con estándares de pureza y frescura.</p>
                         <a href="#contacto" class="btn">Consultar</a>
                     </div>
                 </div>
 
                 <div class="producto-card">
-                    <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb" alt="Lechuga seda" class="producto-img" loading="lazy">
+                    <img src="img/lechuga-seda.jpg" alt="Lechuga Seda" class="producto-img">
                     <div class="producto-info">
                         <h3>Lechuga Seda</h3>
-                        <p>Textura suave y sabor delicado.</p>
+                        <p>Textura suave y sabor único.</p>
                         <a href="#contacto" class="btn">Consultar</a>
                     </div>
                 </div>
 
                 <div class="producto-card">
-                    <img src="https://images.unsplash.com/photo-1604339454409-7019bdc1d1f8" alt="Coliflor" class="producto-img" loading="lazy">
+                    <img src="img/coliflor.jpg" alt="Coliflor Hidropónica" class="producto-img">
                     <div class="producto-info">
                         <h3>Coliflor Hidropónica</h3>
-                        <p>Fresca y con mayor valor nutricional.</p>
+                        <p>Fresca, nutritiva y lista para cocinar.</p>
                         <a href="#contacto" class="btn">Consultar</a>
                     </div>
                 </div>
@@ -233,55 +225,39 @@
         <section id="nosotros">
             <h2>Sobre Nosotros</h2>
             <p>HidroBovaje es una empresa innovadora dedicada al cultivo de productos hidropónicos mediante técnicas avanzadas que nos permiten ofrecer:</p>
-            <ul style="margin-left: 2rem; margin-top: 1rem;">
-                <li>Mayor eficiencia en el uso del agua (90% menos que cultivos tradicionales)</li>
-                <li>Productos libres de pesticidas y químicos dañinos</li>
-                <li>Producción sostenible durante todo el año</li>
-                <li>Mayor valor nutricional en cada cosecha</li>
+            <ul>
+                <li>Uso eficiente del agua (90% menos que cultivos tradicionales)</li>
+                <li>Productos libres de químicos y pesticidas</li>
+                <li>Cosechas sostenibles todo el año</li>
+                <li>Mayor valor nutricional</li>
             </ul>
         </section>
 
         <section id="contacto">
             <h2>Contáctanos</h2>
-            <p>¡Estamos para servirte! Escríbenos para más información sobre nuestros productos o pedidos.</p>
-
-            <form action="mailto:info@hidrobovaje.com" method="POST" enctype="text/plain">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-                <button type="submit" class="btn">Enviar mensaje</button>
-            </form>
-
+            <p>¡Estamos para servirte! Escríbenos para más información sobre nuestros productos.</p>
             <div class="contacto-info">
                 <p><strong>Email:</strong> info@hidrobovaje.com</p>
                 <p><strong>Teléfono:</strong> +51 XXX XXX XXX</p>
                 <p><strong>Dirección:</strong> Huancán, Junín, Perú</p>
-                <a href="https://maps.google.com/?q=12°06'08.8\"S 75°12'57.2\"W" class="btn" target="_blank" rel="noopener noreferrer">Ver ubicación</a>
-            </div>
-
-            <div style="margin-top: 2rem;">
-                <p><strong>Síguenos en redes:</strong></p>
-                <a href="#" target="_blank" class="nav-link">Facebook</a>
-                <a href="#" target="_blank" class="nav-link">Instagram</a>
-                <a href="#" target="_blank" class="nav-link">WhatsApp</a>
+                <a href="https://maps.google.com/?q=12°06'08.8\"S 75°12'57.2\"W" class="btn" target="_blank">Ver ubicación</a>
             </div>
         </section>
 
         <section id="preguntas">
             <h2>Preguntas Frecuentes</h2>
             <h3>¿Qué es la hidroponía?</h3>
-            <p>Es un método de cultivo sin suelo, donde las plantas crecen en soluciones nutritivas disueltas en agua.</p>
+            <p>Es una técnica de cultivo sin suelo que usa soluciones minerales en agua para alimentar las plantas.</p>
             <h3>¿Por qué elegir productos hidropónicos?</h3>
-            <p>Son más saludables, no contienen pesticidas y tienen mayor valor nutricional.</p>
-            <h3>¿Hacen entregas a domicilio?</h3>
-            <p>Sí, contamos con servicio de delivery en la zona de Huancayo.</p>
+            <p>Porque son más saludables, limpios y sostenibles.</p>
+            <h3>¿Hacen entregas?</h3>
+            <p>Sí, ofrecemos delivery en la zona de Huancayo.</p>
         </section>
     </main>
 
     <footer>
         <p>HidroBovaje &copy; <span id="year"></span> - Todos los derechos reservados</p>
         <p>Cultivos Hidropónicos de Alta Calidad</p>
-        <a href="#inicio" class="btn" style="margin-top: 1rem;">Subir ↑</a>
     </footer>
 
     <script>
@@ -289,3 +265,4 @@
     </script>
 </body>
 </html>
+
